@@ -1,0 +1,24 @@
+.listContainer {
+    width: 100%;
+
+
+    /* min-width: 1000px; */
+    background-color: white;
+    height: 75vh;
+    overflow-y: auto;
+
+}
+
+
+/* BECAUSE THERE IS NO SCROLLBAR IN THE IMAGE BUT I THINK IT IS KIND OF CONFUSING WITH OUT A SCROLLBAR*/
+::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}

@@ -1,0 +1,154 @@
+.studentContent {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 0.4fr 1.6fr;
+    grid-template-rows: 1fr;
+    gap: 25px 25px;
+    grid-template-areas:
+        ". .";
+    border-bottom: 1px solid #EAEAEA;
+    padding: 25px;
+    user-select: auto;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.imgContainer {
+    width: 200px;
+    height: 200px;
+}
+
+.studentInfo {
+    margin-left: 25px;
+    margin-right: 100px;
+}
+
+.studentName {
+    text-transform: uppercase;
+    margin: 0px;
+    font-weight: 700;
+    font-size: calc(25px + (50 - 25) * ((100vw - 280px) / (1600 - 280)));
+    /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.gradesButton {
+    position: absolute;
+    right: 5px;
+    top: 25px;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    color: #cacaca;
+}
+
+.gradesButton:hover {
+    cursor: pointer;
+}
+
+.tab {
+    margin: 0px 15px;
+}
+
+.listOfGrades {
+    padding: 0px;
+    margin: 35px 0px 0px 0px;
+}
+
+.hidden {
+    display: none;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tagForm {
+    width: 40%;
+    padding-left: 30px;
+}
+
+.tags li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 0px 20px;
+    background: #EAEAEA;
+}
+
+.notFound {
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 850px) {
+
+    .studentInfo {
+        margin-left: 25px;
+        margin-right: 0px;
+    }
+
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    .studentInfo {
+        margin-left: 25px;
+        margin-right: 0px;
+    }
+
+    .studentContent {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .studentInfo {
+        margin-top: 50px;
+    }
+
+    .tagForm {
+        width: 70%;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+
+    .studentContent {
+
+        padding: 0px;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 350px) {
+
+
+    .studentContent {
+
+        padding: 0px;
+    }
+
+    ul {
+        padding: 0px;
+    }
+
+    .tagForm {
+        padding-left: 0px;
+    }
+
+}

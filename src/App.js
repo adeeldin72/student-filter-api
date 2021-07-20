@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import { getInfo as fetchCall } from './Components/Functions'
+
+import StudentList from './Components/StudentList';
+import Wrapper from './Components/UI/Wrapper';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Wrapper>
+        <div className='mainContent'>
+
+          <StudentList fetchCall={fetchCall} />
+
+        </div>
+      </Wrapper>
     </div>
   );
 }

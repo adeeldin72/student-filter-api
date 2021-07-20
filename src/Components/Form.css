@@ -1,0 +1,17 @@
+input[type='text'] {
+    width: 95%;
+    padding: 15px 5px 10px 5px;
+    border: none;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #EAEAEA;
+    margin-bottom: 20px;
+}
+
+input[type='text']::placeholder {
+    color: #b1b1b1;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+}
